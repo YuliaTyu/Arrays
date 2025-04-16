@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -12,13 +12,13 @@ void main()
 
 	const int SIZE = 15;
 	int arr[SIZE] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14 };
-	int n;                                                  // количество сдвигов
+	int n;                                                  // РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ
 
 	for (int i = 0; i < SIZE; i++) cout << arr[i] << tab;
 	cout << endl;
-	cout << "Количество сдвигов: "; cin >> n;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> n;
 	cout << endl;
-	cout << "Массив измененный: " << n;
+	cout << "РњР°СЃСЃРёРІ РёР·РјРµРЅРµРЅРЅС‹Р№: " << n;
 	cout << endl;
 	for (int i = n; i < SIZE; i++) cout << arr[i] << tab;
 	for (int i = 0; i < n; i++) cout << arr[i] << tab;
@@ -31,7 +31,7 @@ void main()
 	int arr[n] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14 };
 	
 	int number_of_shifts;
-	cout << "Введите количество сдвигов"; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ"; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[0];
