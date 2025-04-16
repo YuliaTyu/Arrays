@@ -27,6 +27,18 @@ void main()
     cout << "Введите номер массива: "; cin >> nomber;
     cout << "элемент массива: " << arr[nomber-1] << endl;
 
+    //Вывод массива в прямом порядке
+    for (int i = 0; i <= nomber; i++)
+    {
+        cout << arr[i] << "\t";
+    }
+    cout << endl; 
+    //Вывод массива в обратном порядке
+    for (int i = nomber; i >= 0; i--)
+    {
+        cout << arr[i] << "\t";
+    }
+    cout << endl;
     //код, который вычисляет сумму элементов массива
     int sum = 0;
     for (int i = 0; i < SIZE; i++)
@@ -36,7 +48,7 @@ void main()
     cout << "Сумма элементов массива: " << sum << endl;
 
     //код, который вычисляет среднеарифметическое значение массива
-    int arg = 0;
+    double arg = 0;
     for (int i = 0; i < SIZE; i++)
     {
         arg = sum / SIZE;
@@ -81,8 +93,11 @@ void main()
 
 #endif // ARR_2
 
-
-    
+    //генерация случайных чисел
+    //for (int i = 0; i < nomber; i++)
+    //{
+    //   arr[i] = rand()%100;
+    //}
   
 
 }
