@@ -3,7 +3,7 @@ using namespace std;
 
 #define ARR_1
 //#define ARR_2
-
+//#define ARR_3
 
 void main()
 
@@ -73,9 +73,27 @@ void main()
     }
     cout << "Максимальное значение массива: " << max << endl;
 
+    //код, который делает сортировку массива СОРТИРОВКА ВЫБОРОМ 
+    for (int i = 0; i < SIZE; i++)//счетчик выбирает элемент, в который нужно поместить мин занчение
+    {
+        for (int j = i+1; j < SIZE; j++)//счетчик перебирает элементы в поисках мин значения
+        {
+            //arr[i] - выбрнный
+            //arr[j] - перебираем
+            if (arr[j] < arr[i])
+            {
+                int buffer = arr[i];
+                arr[i] = arr[j];
+                arr[j] = buffer;
+            }
+        }
+    }
+    for (int i = 0; i < SIZE; i++)
+        {
+        cout << arr[i] << "\t";
+        }
+    cout << endl;
 
-
-   
 #endif
     
     // код, в котором значение элемента массива вводим с клавиатуры
@@ -98,6 +116,41 @@ void main()
     //{
     //   arr[i] = rand()%100;
     //}
-  
+
+#ifdef ARR_3
+
+
+
+    const int n = 5;
+    int arr[n] = { 3,5,8 };
+    arr[1] = 1024;
+    cout << arr[1]<< endl;
+    int minRand, maxRand;
+    do {
+        cout << "Введите мин число"; cin >> minRand;
+        cout << "Введите макс число"; cin >> maxRand;
+        if (minRand > maxRand)cout << " min < max" << endl;
+        if (minRand == maxRand)cout << "Разные " << endl;
+    } while (minRand >= maxRand);
+
+    /*if (maxRand < minRand)
+    {
+        int buffer = minRand;
+        minRand = maxRand;
+        maxRand = buffer;
+    }*/
+
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = rand() % (maxRand - minRand) + minRand;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << "\t";
+    }
+    cout << endl;
+
+#endif // DEBUG
 
 }

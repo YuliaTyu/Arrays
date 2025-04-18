@@ -3,11 +3,13 @@ using namespace std;
 
 #define tab "\t"
 //#define ARRAYS
+//#define ARRAYS_LEFT
 
 void main()
 
 {
 	setlocale(LC_ALL, "");
+
 #ifdef ARRAYS 
 
 	const int SIZE = 15;
@@ -25,7 +27,7 @@ void main()
 	cout << endl;
 #endif	
 
-
+#ifdef ARRAYS_LEFT
 
 	const int n = 15;
 	int arr[n] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14 };
@@ -47,5 +49,7 @@ void main()
 		cout << endl;
 	}
 	cout << endl;
+#endif // ARRAYS_LEFT
+
 
 }
