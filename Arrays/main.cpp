@@ -1,7 +1,7 @@
 ﻿#include<iostream>
 using namespace std;
 
-#define ARR_1
+//#define ARR_1
 //#define ARR_2
 //#define ARR_3
 
@@ -152,5 +152,7 @@ void main()
     cout << endl;
 
 #endif // DEBUG
+
+
 
 }
